@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.navbar {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0%;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #c3ff00;
+}
+
+/* Main Page Content - About */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display:block;
+    object-fit: cover;
+}
+
+.large-page {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;;
+    margin: 20% 5% 5% 5%
+}
+
+
+/* Tablet Screen Responsiveness */
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        font-size: 0.8rem;
+    }
+    .large-page {
+        flex-direction: column;
+    }
+    .img-card {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        margin-top: none;
+    }
+}
+
+
+/* Mobile Screen Responsiveness */
+
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        font-size: 0.6rem;
+        flex-wrap: wrap;
+    }
+    .text-card {
+        font-size: 0.875rem;
+    }
+}
