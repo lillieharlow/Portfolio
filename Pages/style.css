@@ -25,26 +25,21 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    display:block;
-    object-fit: cover;
 }
 
 .large-page {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;;
-    margin: 5% 5% 5% 5%
+    align-items: center;
+    margin: 5% 5% 5% 5%;
 }
 
-.text-card {
-    margin-right: 5%
-}
 
 
 /* Tablet Screen Responsiveness */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .navbar {
         font-size: 0.8rem;
     }
