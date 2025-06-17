@@ -1,8 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
     background-color: black;
 }
 
@@ -30,7 +33,7 @@ body {
 
 
 .page-header {
-    padding: 0 2rem;
+    padding: 2vh 2vw;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -93,19 +96,19 @@ footer img {
 
 
 
-/* Main Page Content - About */
+/* About Page Styles */
 
 .about-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 2vw 20vw 2vw 20vw;
+    padding: 2vh 20vw 2vh 20vw;
     gap: 4vw;
 }
 
 .text-card {
-    flex: 2;
+    flex: 1;
 }
 
 .img-card {
@@ -121,23 +124,52 @@ footer img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: -8px -8px 8px #ff006a, -8px 8px 8px #ffa500, 8px 8px 8px #ffff00, 8px -8px 8px #ffa500, -16px -16px 8px #fd79d3, -16px 16px 8px #d36cff, 16px 16px 8px #55ff96, 16px -16px 8px #d36cff
 }
 
 
-/*/ Contact Page Styles*/
+/* Contact Page Styles */
 
 .text-card a {
     text-decoration: none;
     color: white;
     flex-direction: column;
     display: flex;
-    padding-top: 4vw;
+    padding-top: 4vh;
 }
 
 
+/* Testimonial Page Styles */
 
 
+.testimonial-cards {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 12px #ffffff6d;
+    border-radius: 1rem;
+    padding: 1.5rem
+}
 
+.testimonial-name {
+    color: white;
+    font-style: bolder;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    padding: 2vh 20vw 2vh 20vw;
+    gap: 10vw;
+}
+
+.testimonial-text {
+    font-style: italic;
+}
 
 
 /* Tablet Screen Responsiveness */
@@ -150,7 +182,7 @@ footer img {
 
     .about-content {
         flex-direction: column-reverse;
-        padding: 0vw 10vw 10vw 10vw;
+        padding: 0vh 10vw 10vh 10vw;
         gap: 4vw;
     }
 
@@ -173,12 +205,19 @@ footer img {
 
     .text-card {
         padding-right: 0;
+        padding-top: 3vh;
     }
 
     .text-card a {
-        padding-top: 8vw;
+        padding-top: 8vh;
         display: flex;
         align-items: center;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 30vw 10vh 30vw;
     }
 }
 
@@ -224,5 +263,13 @@ footer img {
 
     #animation-name {
         font-size: 1.6rem
+    }
+
+    .testimonial-name{
+        font-size: 0.875rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.875rem;
     }
 }
