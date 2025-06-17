@@ -5,7 +5,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: black;
 }
 
@@ -87,11 +87,30 @@ footer img {
 #animation-name {
     display: flex;
     color: white;
+    text-shadow: #ff006a 4px 4px 20px;
     font-size: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;;
     height: 80vh; /*Must have height to set center on Y axis*/
+    animation: index-animation 6s infinite;
+}
+
+@keyframes index-animation {
+    0%, 100% { text-shadow: #ff006a 4px 4px 20px; }
+    25%, 75% { text-shadow: #ffa500 4px 4px 20px; }
+    50% { text-shadow: #ffff00 4px 4px 20px; }
+}
+
+#animation-name span:nth-child(even) {
+    animation: second-color 8s infinite;
+}
+
+@keyframes second-color {
+    0%, { text-shadow: #fd79d3 4px 4px 20px; }
+    20%, 100% { text-shadow: #d36cff 4px 4px 20px; }
+    40%, 80% { text-shadow: #55f1ff 4px 4px 20px; }
+    60% { text-shadow: #00ffb7 4px 4px 20px; }
 }
 
 
@@ -124,7 +143,7 @@ footer img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: -8px -8px 8px #ff006a, -8px 8px 8px #ffa500, 8px 8px 8px #ffff00, 8px -8px 8px #ffa500, -16px -16px 8px #fd79d3, -16px 16px 8px #d36cff, 16px 16px 8px #55ff96, 16px -16px 8px #d36cff
+    box-shadow: -8px -8px 8px #ff006a, -8px 8px 8px #ffa500, 8px 8px 8px #ffff00, 8px -8px 8px #ffa500, -16px -16px 8px #fd79d3, -16px 16px 8px #d36cff, 16px 16px 8px #55f1ff, 16px -16px 8px #00ffb7
 }
 
 
@@ -191,6 +210,10 @@ footer img {
         width: 100%;
         height: auto;
         padding-top: 0;
+    }
+
+    .text-card {
+        font-size: 0.95rem;
     }
 
     .page-header {
