@@ -27,6 +27,8 @@ body {
 }
 
 /* Page styles across the site*/
+
+
 .page-header {
     padding: 0 2rem;
     color: white;
@@ -40,6 +42,7 @@ body {
 p {
     color: white
 }
+
 
 /* Footer */
 
@@ -59,13 +62,13 @@ footer {
 }
 
 .footer-left {
-    margin-left: 5%;
+    padding-left: 8vw;
     font-size: 0.7rem;
     color: #c3ff00;
 }
 
 .footer-right {
-    margin-right: 10%;
+    padding-right: 15vw;
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -91,17 +94,18 @@ footer img {
 
 
 /* Main Page Content - About */
+
 .about-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 2vw 20vw 2vw 20vw;
+    gap: 4vw;
 }
 
 .text-card {
     flex: 2;
-    padding: 2rem;
 }
 
 .img-card {
@@ -112,7 +116,7 @@ footer img {
 }
 
 .img-card img {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -120,24 +124,41 @@ footer img {
 }
 
 
+/*/ Contact Page Styles*/
+
+.text-card a {
+    text-decoration: none;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    padding-top: 4vw;
+}
+
+
+
+
+
+
 
 /* Tablet Screen Responsiveness */
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1030px) {
     .navbar {
         font-size: 0.8rem;
     }
 
     .about-content {
         flex-direction: column-reverse;
-        padding: 2rem
+        padding: 0vw 10vw 10vw 10vw;
+        gap: 4vw;
     }
 
     .img-card {
         max-width: 300px;
         width: 100%;
         height: auto;
+        padding-top: 0;
     }
 
     .page-header {
@@ -148,6 +169,16 @@ footer img {
     #animation-name {
         flex-wrap: wrap;
         font-size: 2rem
+    }
+
+    .text-card {
+        padding-right: 0;
+    }
+
+    .text-card a {
+        padding-top: 8vw;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -166,24 +197,31 @@ footer img {
         margin: 0;
         padding: 0;
     }
+
     .text-card {
         font-size: 0.875rem;
     }
+
     .footer-left {
         margin-left: 0;
+        display: flex;
         flex-wrap: wrap;
+        padding: 0;
     }
+
     .footer-right {
         position: static;
-        padding-right: 3%;
     }
+
     footer img {
         max-width: 16px;
         height:auto;
     }
+
     .page-header {
         font-size: 1.8rem;
     }
+
     #animation-name {
         font-size: 1.6rem
     }
