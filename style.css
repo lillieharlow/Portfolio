@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -91,50 +91,60 @@ footer img {
 
 
 /* Main Page Content - About */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.text-card {
+    flex: 2;
+    padding: 2rem;
+}
 
 .img-card {
+    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .img-card img {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
-    height: auto; /* my image wasnt 100% square so set auto to allow circle*/
+    height: auto;
     border-radius: 50%;
+    object-fit: cover;
 }
-
-
-
-
-
 
 
 
 /* Tablet Screen Responsiveness */
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .navbar {
         font-size: 0.8rem;
     }
-    .large-page {
-        flex-direction: column;
+
+    .about-content {
+        flex-direction: column-reverse;
+        padding: 2rem
     }
+
     .img-card {
-        max-width: 400px;
+        max-width: 300px;
         width: 100%;
         height: auto;
-        margin-top: none;
     }
-    .text-card {
-        margin-right: 0;
-    }
+
     .page-header {
         letter-spacing: 0.18rem;
         font-size: 2rem;
     }
+
     #animation-name {
         flex-wrap: wrap;
         font-size: 2rem
