@@ -87,19 +87,19 @@ footer img {
 #animation-name {
     display: flex;
     color: white;
-    text-shadow: #ff006a 8px 8px 40px;
+    text-shadow: #ff006a 0 0 80px;
     font-size: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;;
     height: 80vh; /*Must have height to set center on Y axis*/
-    animation: index-animation 2s infinite;
+    animation: index-animation 4s infinite;
 }
 
 @keyframes index-animation {
-    0%, 100% { text-shadow: #ff0000 8px 8px 40px; }
-    25%, 75% { text-shadow: #ffa500 8px 8px 40px; }
-    50% { text-shadow: #ffff00 8px 8px 40px; }
+    0%, 100% { text-shadow: #ff00bf 0 0 80px; }
+    25%, 75% { text-shadow: #ffa500 0 0 80px; }
+    50% { text-shadow: #d9ff00 0 0 80px; }
 }
 
 #animation-name span:nth-child(even) {
@@ -107,10 +107,10 @@ footer img {
 }
 
 @keyframes second-color {
-    0%, { text-shadow: #55f1ff 8px 8px 20px; }
-    20%, 100% { text-shadow: #d36cff 8px 8px 40px; }
-    40%, 80% { text-shadow: #fd79d3 8px 8px 40px; }
-    60% { text-shadow: #00ffb7 8px 8px 40px; }
+    0%, { text-shadow: #55f1ff 0 0 80px; }
+    20%, 100% { text-shadow: #d36cff 0 0 80px; }
+    40%, 80% { text-shadow: #fd79d3 0 0 80px; }
+    60% { text-shadow: #00ffb7 0 0 80px; }
 }
 
 /* About Page Styles */
