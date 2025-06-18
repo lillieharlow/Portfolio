@@ -107,7 +107,7 @@ footer img {
 }
 
 @keyframes second-color {
-    0%, { text-shadow: #55f1ff 0 0 80px; }
+    0% { text-shadow: #55f1ff 0 0 80px; }
     20%, 100% { text-shadow: #d36cff 0 0 80px; }
     40%, 80% { text-shadow: #fd79d3 0 0 80px; }
     60% { text-shadow: #00ffb7 0 0 80px; }
@@ -141,8 +141,22 @@ footer img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: -8px -8px 8px #ff006a, -8px 8px 8px #ffa500, 8px 8px 8px #ffff00, 8px -8px 8px #ffa500, -16px -16px 8px #fd79d3, -16px 16px 8px #d36cff, 16px 16px 8px #55f1ff, 16px -16px 8px #00ffb7
+    box-shadow: -8px -8px 10px #ff006a, -8px 8px 10px #ffa500, 8px 8px 10px #ffff00, 8px -8px 10px #ffa500, -16px -16px 20px #fd79d3, -16px 16px 20px #d36cff, 16px 16px 20px #55f1ff, 16px -16px 20px #00ffb7;
 }
+
+.img-card img:hover {
+    animation: about-image 2s linear infinite;
+}
+
+@keyframes about-image {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 /* Contact Page Styles */
