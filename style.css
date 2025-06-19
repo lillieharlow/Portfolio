@@ -6,13 +6,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background-color: black;
+    background-image: url("icons-images/bg1.png");
+    background-repeat: repeat;
+    background-position: center;
+    animation: background 15s linear infinite;
+}
+
+@keyframes background {
+    0%, 100% {
+        background-image: url("icons-images/bg1.png");
+    }
+    33% {
+        background-image: url("icons-images/bg2.png");
+    }
+    66% {
+        background-image: url("icons-images/bg3.png");
+    }
 }
 
 /* Nav Bar */
 
 .navbar {
-    background-color: black;
     width: 100%;
     height: 50px;
     display: flex;
@@ -93,7 +107,7 @@ footer img {
     align-items: center;
     text-align: center;;
     height: 80vh; /*Must have height to set center on Y axis*/
-    animation: index-animation 4s infinite;
+    animation: index-animation 4s linear infinite;
 }
 
 @keyframes index-animation {
@@ -103,7 +117,7 @@ footer img {
 }
 
 #animation-name span:nth-child(even) {
-    animation: second-color 3s infinite;
+    animation: second-color 3s linear infinite;
 }
 
 @keyframes second-color {
