@@ -1,0 +1,35 @@
+/* About Page Styles */
+
+.about-content
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    padding: 2vh 20vw 2vh 20vw
+    gap: 4vw
+
+    .text-card
+        flex: 1
+
+    .img-card
+        flex: 1
+        display: flex
+        justify-content: flex-end
+        align-items: flex-start
+
+        img
+            max-width: 600px
+            width: 100%
+            height: auto
+            border-radius: 50%
+            object-fit: cover
+            box-shadow: -8px -8px 10px #ff006a, -8px 8px 10px #ffa500, 8px 8px 10px #ffff00, 8px -8px 10px #ffa500, -16px -16px 20px #fd79d3, -16px 16px 20px #d36cff, 16px 16px 20px #55f1ff, 16px -16px 20px #00ffb7
+
+        &:hover
+            animation: about-image 2s linear infinite
+
+@keyframes about-image
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
