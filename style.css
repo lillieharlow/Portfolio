@@ -196,6 +196,54 @@ footer img {
     padding-top: 4vh;
 }
 
+/* Projects Page */
+.project-list a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 4vh 10vw;;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    padding: 0 10vw 2vh 10vw;
+    margin-bottom: 10vh;
+}
+
+.card-project {
+    flex: 1;
+    background-color: var(--black);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 50vw;
+    width: 100%;
+}
+
+.card-project h2 {
+    color: var(--white);
+    padding-bottom: 4vh;
+}
+
+.img-card-project {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.img-card-project img {
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 10px var(--white);
+}
+
 /* Contact Page */
 .text-card {
     flex: 1;
@@ -298,6 +346,22 @@ footer img {
 
     .skills {
         max-width: 100%;
+    }
+
+    .project-content {
+        flex-direction: column-reverse;
+        gap: 8vw;
+        padding: 0vh 10vw;
+    }
+    .img-card-project {
+        width: 100%;
+        padding-top: 4vh;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .card-project {
+        max-width: 90%;
     }
 }
 
