@@ -169,14 +169,23 @@ footer img {
 }
 
 
-/* Testimonial Page Styles */
+/* Testimonial Page */
 
+.testimonial-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw 10vw;
+    gap: 5vw;
+    min-height: 50vh;
+}
 
 .testimonial-cards {
     background-color: rgb(0, 0, 0);
-    box-shadow: 5px 5px 12px #ffffff6d;
     border-radius: 1rem;
-    padding: 1.5rem
+    padding: 1.5rem;
+    max-width: 50vw;
+    width: 100%;
 }
 
 .testimonial-name {
@@ -187,14 +196,6 @@ footer img {
     justify-content: center;
     align-items: center;
     padding: 2vw;
-}
-
-.testimonial-container {
-    display: flex;
-    align-items: space-evenly;
-    justify-content: center;
-    padding: 2vh 20vw 2vh 20vw;
-    gap: 10vw;
 }
 
 .testimonial-text {
@@ -251,7 +252,8 @@ footer img {
     .testimonial-container {
         flex-direction: column;
         align-items: center;
-        padding: 10vh 30vw 10vh 30vw;
+        padding: 5vh 10vw;
+        gap: 5vh;
     }
 }
 
