@@ -18,7 +18,7 @@ body {
 }
 
 .page-header {
-    padding: 2vh 2vw;
+    padding: 5vh 8vw;
     color: var(--white);
     display: flex;
     flex-wrap: wrap;
@@ -117,12 +117,18 @@ footer img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 2vh 20vw 2vh 20vw;
+    padding: 0 10vw 2vh 10vw;
     gap: 4vw;
 }
 
-.text-card {
+.text-card-about {
     flex: 1;
+    padding-top: 5vh;
+    background-color: var(--black);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 50vw;
+    width: 100%;
 }
 
 .img-card {
@@ -133,7 +139,7 @@ footer img {
 }
 
 .img-card img {
-    max-width: 600px;
+    max-width: 450px;
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -154,8 +160,34 @@ footer img {
     }
 }
 
-/* Contact Page */
-.text-card a {
+/* Skills Page */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 50%;
+}
+
+.skills li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills li img {
+    max-width: 50px;
+    background-color: var(--white);
+    padding: 0.5rem;
+    border-radius: 30%;
+    box-shadow: 0 0 10px var(--white);
+}
+
+.text-card p {
     text-decoration: none;
     color: var(--white);
     font-weight: bolder;
@@ -164,12 +196,27 @@ footer img {
     padding-top: 4vh;
 }
 
+/* Contact Page */
+.text-card {
+    flex: 1;
+}
+
+.text-card a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vh;
+    text-align: center;
+}
+
 /* Testimonial Page */
 .testimonial-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5vw 10vw;
+    padding: 0 10vw;
     gap: 5vw;
     min-height: 50vh;
 }
@@ -205,7 +252,7 @@ footer img {
     .about-content {
         flex-direction: column-reverse;
         padding: 0vh 10vw 10vh 10vw;
-        gap: 4vw;
+        gap: 8vw;
     }
 
     .img-card {
@@ -217,6 +264,13 @@ footer img {
 
     .text-card {
         font-size: 0.95rem;
+        padding-top: 3vh;
+    }
+
+    .text-card-about {
+        font-size: 0.95rem;
+        padding-right: 0;
+        max-width: 90%;
     }
 
     .page-header {
@@ -227,11 +281,6 @@ footer img {
     #animation-name {
         flex-wrap: wrap;
         font-size: 2rem
-    }
-
-    .text-card {
-        padding-right: 0;
-        padding-top: 3vh;
     }
 
     .text-card a {
@@ -245,6 +294,10 @@ footer img {
         align-items: center;
         padding: 5vh 10vw;
         gap: 5vh;
+    }
+
+    .skills {
+        max-width: 100%;
     }
 }
 
@@ -287,6 +340,17 @@ footer img {
 
     #animation-name {
         font-size: 1.6rem
+    }
+
+    .skills {
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .skills li {
+        flex: 1 1 80px;
+        min-width: 60px;
+        margin-bottom: 1rem;
     }
 
     .testimonial-name{
