@@ -33,18 +33,14 @@ body {
 
 .text-card {
     flex: 1;
-    padding-top: 5vh;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     padding: 1.5rem;
     max-width: 50vw;
     width: 100%;
     background-color: var(--opacity);
-}
-
-.text-card p {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
 }
 
 @keyframes background {
@@ -144,7 +140,7 @@ footer img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 12vw 2vh 10vw;
+    padding: 0 10vw;
     gap: 3vw;
 }
 
@@ -205,7 +201,7 @@ footer img {
 }
 
 .about-content .text-card {
-    margin-top: 15vh;
+    margin-top: 5vh;
 }
 
 /* Projects Page */
@@ -286,7 +282,6 @@ footer img {
 
 .testimonial-name {
     color: var(--white);
-    font-style: bolder;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -331,8 +326,8 @@ footer img {
         font-size: 2rem;
     }
 
-    #animation-name h1 {
-        padding: 0 5vw 0 5vw;
+    #animation-name {
+        padding: 0 5vw;
     }
 
     .text-card a {
@@ -407,7 +402,7 @@ footer img {
     }
 
     #animation-name {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .skills {
