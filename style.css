@@ -11,8 +11,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    color: var(--white);
     letter-spacing: 0.012rem;
     line-height: 1.5rem;
+    font-weight: 600;
     background-image: url("icons-images/bg1.png");
     background-repeat: repeat;
     background-position: center;
@@ -22,7 +24,6 @@ body {
 
 .page-header {
     padding: 5vh 8vw;
-    color: var(--white);
     display: flex;
     flex-wrap: wrap;
     font-weight: 700;
@@ -30,9 +31,20 @@ body {
     font-size: 2.5rem;
 }
 
-p {
-    color: var(--white)
+.text-card {
+    flex: 1;
+    padding-top: 5vh;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 50vw;
+    width: 100%;
+    background-color: var(--opacity);
+}
 
+.text-card p {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes background {
@@ -102,18 +114,21 @@ footer img {
 
 /* Index/home page*/
 #animation-name {
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
-    align-items: center;
+    font-size: 6rem;
+    width: 100%;
+    word-wrap: break-word;
     text-align: center;
-    height: 80vh; /* Must have height to set center on Y axis */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     animation: index-animation 4s linear infinite;
 }
 
 #animation-name a {
     text-decoration: none;
     color: var(--white);
+    line-height: 6rem;
 }
 
 @keyframes index-animation {
@@ -131,24 +146,6 @@ footer img {
     justify-content: center;
     padding: 0 12vw 2vh 10vw;
     gap: 3vw;
-}
-
-.text-card {
-    flex: 1;
-    padding-top: 5vh;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    max-width: 50vw;
-    width: 100%;
-    background-color: var(--opacity);
-}
-
-.text-card p {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
 }
 
 .img-card {
@@ -188,7 +185,7 @@ footer img {
     align-items: center;
     gap: 2rem;
     list-style: none;
-    margin: 0 auto;
+    margin-top: 15vh;
     padding: 0;
     max-width: 50%;
 }
@@ -205,6 +202,10 @@ footer img {
     padding: 0.5rem;
     border-radius: 30%;
     box-shadow: 0 0 10px var(--white);
+}
+
+.about-content .text-card {
+    margin-top: 15vh;
 }
 
 /* Projects Page */
@@ -256,19 +257,13 @@ footer img {
 }
 
 /* Contact Page */
-.text-card {
-    flex: 1;
-}
 
 .text-card a {
     text-decoration: none;
     color: var(--white);
-    font-weight: bolder;
     display: flex;
     flex-direction: column;
-    padding-top: 4vh;
     text-align: center;
-    font-size: 1.5rem;
 }
 
 /* Testimonial Page */
@@ -315,6 +310,10 @@ footer img {
         gap: 8vw;
     }
 
+    .about-content .text-card {
+        margin-top: 4vh;
+    }
+
     .img-card {
         max-width: 300px;
         width: 100%;
@@ -324,12 +323,7 @@ footer img {
 
     .text-card {
         font-size: 0.95rem;
-        padding-top: 3vh;
-    }
-
-    .text-card-about {
-        font-size: 0.95rem;
-        max-width: 90%;
+        text-align: center;
     }
 
     .page-header {
@@ -337,13 +331,11 @@ footer img {
         font-size: 2rem;
     }
 
-    #animation-name {
-        flex-wrap: wrap;
-        font-size: 2rem
+    #animation-name h1 {
+        padding: 0 5vw 0 5vw;
     }
 
     .text-card a {
-        padding-top: 8vh;
         display: flex;
         align-items: center;
     }
@@ -357,6 +349,7 @@ footer img {
 
     .skills {
         max-width: 100%;
+        margin-top: 4vh;
     }
 
     .project-content {
@@ -414,7 +407,7 @@ footer img {
     }
 
     #animation-name {
-        font-size: 1.6rem
+        font-size: 3rem;
     }
 
     .skills {
