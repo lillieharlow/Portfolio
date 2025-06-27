@@ -4,12 +4,15 @@
     --black: #000000;
     --green: #c3ff00;
     --white: #ffffff;
+    --opacity: #00000099;
 }
 
 /* Website Style */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    letter-spacing: 0.012rem;
+    line-height: 1.5rem;
     background-image: url("icons-images/bg1.png");
     background-repeat: repeat;
     background-position: center;
@@ -22,13 +25,14 @@ body {
     color: var(--white);
     display: flex;
     flex-wrap: wrap;
-    font-weight: 300%;
+    font-weight: 700;
     letter-spacing: 0.2rem;
     font-size: 2.5rem;
 }
 
 p {
     color: var(--white)
+
 }
 
 @keyframes background {
@@ -56,6 +60,10 @@ p {
     text-decoration: none;
     color: var(--green);
     font-weight: bolder;
+}
+
+header {
+    background-color: var(--opacity);
 }
 
 /* Footer */
@@ -95,13 +103,17 @@ footer img {
 /* Index/home page*/
 #animation-name {
     display: flex;
-    color: var(--white);
     font-size: 3rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 80vh; /* Must have height to set center on Y axis */
     animation: index-animation 4s linear infinite;
+}
+
+#animation-name a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 @keyframes index-animation {
@@ -117,18 +129,26 @@ footer img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 10vw 2vh 10vw;
-    gap: 4vw;
+    padding: 0 12vw 2vh 10vw;
+    gap: 3vw;
 }
 
-.text-card-about {
+.text-card {
     flex: 1;
     padding-top: 5vh;
-    background-color: var(--black);
     border-radius: 1rem;
     padding: 1.5rem;
     max-width: 50vw;
     width: 100%;
+    background-color: var(--opacity);
+}
+
+.text-card p {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
 }
 
 .img-card {
@@ -185,15 +205,6 @@ footer img {
     padding: 0.5rem;
     border-radius: 30%;
     box-shadow: 0 0 10px var(--white);
-}
-
-.text-card p {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    padding-top: 4vh;
 }
 
 /* Projects Page */
@@ -257,6 +268,7 @@ footer img {
     flex-direction: column;
     padding-top: 4vh;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 /* Testimonial Page */
@@ -317,7 +329,6 @@ footer img {
 
     .text-card-about {
         font-size: 0.95rem;
-        padding-right: 0;
         max-width: 90%;
     }
 
