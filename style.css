@@ -5,6 +5,7 @@
     --green: #c3ff00;
     --white: #ffffff;
     --opacity: #00000099;
+    --rainbowshadow: -8px -8px 10px #ff006a, -8px 8px 10px #ffa500, 8px 8px 10px #ffff00, 8px -8px 10px #ffa500, -16px -16px 20px #fd79d3, -16px 16px 20px #d36cff, 16px 16px 20px #55f1ff, 16px -16px 20px #00ffb7;
 }
 
 /* Website Style */
@@ -109,22 +110,39 @@ footer img {
 }
 
 /* Index/home page*/
+#homepage {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+}
+
 #animation-name {
     font-size: 6rem;
     width: 100%;
     word-wrap: break-word;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform 2s cubic-bezier(.36,1.56,.64,1);
     animation: index-animation 4s linear infinite;
+}
+
+#jobtitle {
+    font-size: 1.5rem;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#animation-name:hover {
+    transform: scale(1.2)
 }
 
 #animation-name a {
     text-decoration: none;
     color: var(--white);
-    line-height: 6rem;
 }
 
 @keyframes index-animation {
@@ -140,7 +158,7 @@ footer img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 0 10vw;
+    padding: 0 10vw 10vh 10vw;
     gap: 3vw;
 }
 
@@ -157,7 +175,7 @@ footer img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: -8px -8px 10px #ff006a, -8px 8px 10px #ffa500, 8px 8px 10px #ffff00, 8px -8px 10px #ffa500, -16px -16px 20px #fd79d3, -16px 16px 20px #d36cff, 16px 16px 20px #55f1ff, 16px -16px 20px #00ffb7;
+    box-shadow: var(--rainbowshadow)
 }
 
 .img-card img:hover {
@@ -179,7 +197,7 @@ footer img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3.5rem;
     list-style: none;
     margin-top: 15vh;
     padding: 0;
@@ -197,7 +215,12 @@ footer img {
     background-color: var(--white);
     padding: 0.5rem;
     border-radius: 30%;
-    box-shadow: 0 0 10px var(--white);
+    box-shadow: var(--rainbowshadow);
+    transition: transform 1.5s cubic-bezier(.25,1.56,.64,1);
+}
+
+.skills li img:hover {
+    transform: scale(1.5);
 }
 
 .about-content .text-card {
@@ -299,14 +322,26 @@ footer img {
         font-size: 0.8rem;
     }
 
-    .about-content {
-        flex-direction: column-reverse;
-        padding: 0vh 10vw 10vh 10vw;
-        gap: 8vw;
+    .page-header {
+        letter-spacing: 0.18rem;
+        font-size: 2rem;
     }
 
-    .about-content .text-card {
-        margin-top: 4vh;
+    .about-content {
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+
+    .text-card {
+        font-size: 0.95rem;
+        text-align: center;
+        width: 100%;
+        max-width: 75vw;
+    }
+
+    .text-card a {
+        display: flex;
+        align-items: center;
     }
 
     .img-card {
@@ -316,23 +351,14 @@ footer img {
         padding-top: 0;
     }
 
-    .text-card {
-        font-size: 0.95rem;
-        text-align: center;
-    }
-
-    .page-header {
-        letter-spacing: 0.18rem;
-        font-size: 2rem;
+    #homepage {
+        padding: 0 8vw;
+        width: auto;
+        line-height: 5rem;
     }
 
     #animation-name {
-        padding: 0 5vw;
-    }
-
-    .text-card a {
-        display: flex;
-        align-items: center;
+        font-size: 4.5rem;
     }
 
     .testimonial-container {
@@ -377,8 +403,14 @@ footer img {
         padding: 0;
     }
 
+    .page-header {
+        font-size: 1.8rem;
+    }
+
     .text-card {
-        font-size: 0.875rem;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 90vw;
     }
 
     .footer-left {
@@ -397,12 +429,13 @@ footer img {
         height:auto;
     }
 
-    .page-header {
-        font-size: 1.8rem;
+    #animation-name {
+        font-size: 3rem;
+        line-height: 3rem;
     }
 
-    #animation-name {
-        font-size: 4rem;
+    #jobtitle {
+        font-size: 1rem;
     }
 
     .skills {
