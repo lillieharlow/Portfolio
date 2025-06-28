@@ -7,6 +7,7 @@
     --white: #ffffff;
     --opacity: #00000099;
     --rainbowshadow: -8px -8px 10px #ff006a, -8px 8px 10px #ffa500, 8px 8px 10px #ffff00, 8px -8px 10px #ffa500, -16px -16px 20px #fd79d3, -16px 16px 20px #d36cff, 16px 16px 20px #55f1ff, 16px -16px 20px #00ffb7;
+    --transform: transform 1s cubic-bezier(.36,1.56,.64,1);
 }
 
 /* Website Style */
@@ -125,7 +126,7 @@ footer img {
     width: 100%;
     word-wrap: break-word;
     text-align: center;
-    transition: transform 2s cubic-bezier(.36,1.56,.64,1);
+    transition: var(--transform);
     animation: index-animation 4s linear infinite;
 }
 
@@ -138,7 +139,7 @@ footer img {
 }
 
 #animation-name:hover {
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 #animation-name a {
@@ -217,7 +218,7 @@ footer img {
     padding: 0.5rem;
     border-radius: 30%;
     box-shadow: var(--rainbowshadow);
-    transition: transform 1.5s cubic-bezier(.25,1.56,.64,1);
+    transition: var(--transform);
 }
 
 .skills li img:hover {
@@ -292,11 +293,12 @@ footer img {
     padding: 0.6rem;
     border: none;
     border-radius: 1rem;
-    transition: box-shadow 0.3s, transform 0.2s;
+    transition: var(--transform);
 }
 
 .button:hover {
     box-shadow: var(--rainbowshadow);
+    transform: scale(1.5);
 }
 
 /* Testimonial Page */
@@ -304,17 +306,24 @@ footer img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 10vw;
+    padding: 5vh 10vw 10vh 10vw;
     gap: 5vw;
     min-height: 50vh;
 }
 
 .testimonial-cards {
-    background-color: var(--black);
+    background-color: var(--opacity);
     border-radius: 1rem;
     padding: 1.5rem;
-    max-width: 50vw;
+    max-width: 90%;
     width: 100%;
+    box-shadow: -4px 4px var(--green);
+    transition: var(--transform);
+}
+
+.testimonial-cards:hover {
+    transform: translate(12px, -12px);
+    box-shadow: var(--rainbowshadow);
 }
 
 .testimonial-name {
@@ -378,7 +387,6 @@ footer img {
     .testimonial-container {
         flex-direction: column;
         align-items: center;
-        padding: 5vh 10vw;
         gap: 5vh;
     }
 
