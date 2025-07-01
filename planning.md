@@ -14,16 +14,15 @@ Being able to organise my code in a clean, easy-to-navigate format helped simpli
 My CSS is organised with comments and grouped into the following sections:
 1. Root Styles
 2. Website Styles
-3. Header, Nav Bar Styles
+3. Header & Nav Bar Styles
 4. Footer Styles
 5. Page Styles
     - Index/Home Page Styles
     - About Page Styles
     - Skills Page Styles
-    - Projects Page styles
-    - Contact Page Styles
+    - Projects Page & Contact Page Styles
     - Testimonial Page Styles
-4. Media Queries (Tablet and Mobile Screen Responsiveness)
+6. Media Queries (Tablet and Mobile Screen Responsiveness)
 
 <hr>
 
