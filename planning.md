@@ -1,12 +1,54 @@
-# Website Pages
+# Assessment 1. Portfolio
+## DEV1001 - Introduction to Web Development
 
-<mark>ALL PAGES</mark>
-- Header with nav bar
-    - Fixed
-    - Center
-    - Spaced evenly across top
-    - Mobile menu (hamburger) when screen size is small
-    - Links to other pages in website
+## Summary
+
+This assessment was both challenging and incredibly rewarding. I genuinely loved creating this portfolio, hyper-fixating and diving deep into all the possibilities that HTML and CSS bring to the table. It was equally exciting (and satisfying) when my code actually worked!
+
+The challenge mostly stemmed from my limited experience, knowledge, and skill set. Having never built a website from scratch before, this project pushed me in the best way. It gave me countless opportunities to learn, troubleshoot, lose my mind a little bit, and build on the foundations we're learning in bootcamp.
+
+I originally started working on my portfolio before the preprocessor class. After learning about SASS, I decided to switch my existing CSS into a SASS structure. I created a new branch in my repo and began converting my CSS into SASS, using partial files for better organisation. However, with my limited experience, I quickly became overwhelmed and realised my time would be better spent finishing a cohesive portfolio. I decided to set that plan aside for now. In future projects, I’ll definitely start with SASS and partials from the beginning.
+
+Being able to organise my code in a clean, easy-to-navigate format helped simplify the entire design process. From finalising design elements to fixing responsiveness and layout adjustments.
+
+My CSS is organised with comments and grouped into the following sections:
+1. Root Styles
+2. Website Styles
+3. Page Styles
+4. Media Queries (Tablet and Mobile Screen Responsiveness)
+
+## Wireframe & Moodboard
+
+I roughly followed my wireframes submission from Assessment 1, ISK1001 - Industry Skills I. Minor adjustments were made due to skill level, only utilising HTML and CSS (no JavaScript). Changes included:
+- No hamburger menu on mobile. Instead opted to decrease font size and wrap via flexwrap.
+- No sliders, all content was displayed on the page. If content was extensive (e.g. project page) then anchor links were created to jump to different sections of the page.
+- No modal image slider on prjects page. Just displayed one hero image per project.
+
+## Wesbite Attributes
+- Background Image Annimation
+    - Same across the website.
+    - Created from two original images designed in procreate. Animated with keyframes.
+- Font sizing and typography
+    - Typography is the same across the website to create visual cohesion.
+    - Font size adjusts to media screen size.
+- Navigation Bar
+    - Inside header
+    - 0.5 opacity to not visually cut off background image
+    - Flexbox CSS styling, adjusts evenly to all screen sizes
+    - Easy to read and navigate across website
+- Fixed Footer
+    - Copyright info
+    - Social meida links
+
+## Webpage Attributes
+1. Index/Home Page
+    - Name animated with glowing effect and scale 1.5 on hover.
+2. About Page
+    - Container changes ``flex-direction`` depednign on screen size; ``flex-direction: row;`` for desktop; ``flex-direction: column-reverse;`` for tablet and mobile. 
+3. Skills Page
+4. Projects Page
+5. Contact Page
+6. Testimonial Page
 
     Header tag didnt use nav because used div to make a container for flex box to allow for screen responsiveness and keep everything aligned center until it is 600px. Then mobile menu activates and menu is in hamburger icon.
 
