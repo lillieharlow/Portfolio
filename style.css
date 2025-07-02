@@ -156,7 +156,7 @@ footer img {
 }
 
 /* About Page Styles */
-.about-content {
+.about-content, .skills-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -165,7 +165,7 @@ footer img {
     gap: 3vw;
 }
 
-.about-content .text-card {
+.about-content .text-card, .skills-content .text-card {
     margin-top: 5vh;
 }
 
@@ -231,7 +231,7 @@ footer img {
 }
 
 /* Projects Page & Contacts Page Styles */
-.contact-buttons {
+.project-nav, .contact-buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -276,6 +276,12 @@ footer img {
 
 .card-project h2 {
     color: var(--white);
+    margin-bottom: 3vh;
+}
+
+.card-project ul li {
+    list-style: none;
+    margin-bottom: 2vh;
 }
 
 .img-card-project {
@@ -340,7 +346,7 @@ footer img {
         font-size: 2rem;
     }
 
-    .about-content {
+    .about-content, .skills-content {
         flex-direction: column-reverse;
         gap: 4vh;
     }
@@ -385,7 +391,7 @@ footer img {
         margin-top: 4vh;
     }
 
-    .contact-buttons {
+    .project-nav, .contact-buttons {
         flex-direction: column;
         gap: 3rem;
     }
