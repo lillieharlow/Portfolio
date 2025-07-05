@@ -47,6 +47,10 @@ body {
     background-color: var(--opacity);
 }
 
+.text-card p {
+    margin-bottom: 1rem;
+}
+
 @keyframes background {
     0%, 100% {
         background-image: url("icons-images/bg1.png");
@@ -182,7 +186,7 @@ footer img {
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: var(--rainbowshadow)
+    box-shadow: var(--rainbowshadow);
 }
 
 .img-card img:hover {
@@ -199,6 +203,7 @@ footer img {
 }
 
 /* Skills Page Styles */
+/* .skills-content CSS is in the About Page Styles because it's the same and I didn't want to repeat it */
 .skills {
     display: flex;
     flex-wrap: wrap;

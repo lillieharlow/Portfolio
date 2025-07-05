@@ -16,22 +16,24 @@ My CSS is organised with comments and grouped into the following sections:
 2. Website Styles
 3. Header & Nav Bar Styles
 4. Footer Styles
-5. Page Styles
-    - Index/Home Page Styles
-    - About Page Styles
-    - Skills Page Styles
-    - Projects Page & Contact Page Styles
-    - Testimonial Page Styles
-6. Media Queries (Tablet and Mobile Screen Responsiveness)
+5. Index/Home Page Styles
+6. About Page Styles
+7. Skills Page Styles
+8. Projects Page & Contact Page Styles
+9. Testimonial Page Styles
+10. Tablet Screen Responsiveness (max-width: 1030px)
+11. Mobile Screen Responsiveness (max-width: 480px)
 
 <hr>
 
 ## Wireframe & Moodboard
 
-This project was based on my wireframes submitted for Assessment 1 of ISK1001 – Industry Skills I. While the core structure remained the same, minor adjustments were made due to technical limitations, as the project was built using only HTML and CSS (no JavaScript). Key changes included:
-    - Mobile Navigation Bar: The original hamburger menu was removed. Instead, font sizes were reduced and flex-wrap was used to ensure a responsive layout.
-    - Sliders: Sliders were removed, and all content is displayed directly on the page. For lengthy sections (e.g., Projects Page), anchor links are used to easily navigate between different parts of the page.
-    - Modal Image Sliders: Each project displays a single hero image instead of a modal slider.
+This project was based on my wireframes submitted for Assessment 1 of ISK1001 – Industry Skills I. While the core structure remained the same, minor adjustments were made due to technical limitations, as this project is built with HTML and CSS (no JavaScript).  
+
+Key changes included:
+- Mobile Navigation Bar: The original hamburger menu was removed. Instead, font sizes were reduced and flex-wrap was used to ensure a responsive layout.
+- Sliders: Sliders were removed, and all content is displayed directly on the page. For lengthy sections (e.g., Projects Page), anchor links are used to easily navigate between different sections of the page.
+- Modal Image Sliders: Each project displays a single hero image instead of a modal slider.
 
 <img src="icons-images/moodboard.png" alt="Moodboard for Portfolio" width="700px">
 
@@ -71,7 +73,7 @@ This project was based on my wireframes submitted for Assessment 1 of ISK1001 �
         - ``flex-direction: row`` on desktop
         - ``flex-direction: column-reverse`` on tablet and mobile
     - Portrait image:
-        - Rotates 360° infinitely on hover (CSS animation). 
+        - Rotates 360° infinitely on hover using keyframes ``transform: rotate``. 
 
 3. Skills Page
     - Skill icons:
@@ -92,12 +94,10 @@ This project was based on my wireframes submitted for Assessment 1 of ISK1001 �
         - Twitter
     - On hover these links animate with ``transform: scale`` and ``box-shadow``. 
 
-
-scale, box-shadow, and background gradient transition
 6. Testimonial Page
     - Testimonial cards:
-        - Wrap on smaller screens for responsiveness
-        - Animate on hover with a ``box-shadow`` and ``translate``.
+    - Wrap on smaller screens for responsiveness
+    - Animate on hover with a ``box-shadow`` and ``translate``.
 
 <hr>
 
